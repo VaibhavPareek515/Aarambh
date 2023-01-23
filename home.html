@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aarambh</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	* {
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Mukta', sans-serif;
+		/*background-color: black;*/
+	}
+
+	.name {
+		font-size: 1.6rem;
+		font-weight: bold;
+		padding: 20px;
+		color: white;
+		width: 30%;
+	}
+
+	nav {
+		display: flex;
+	}
+
+	.name b {
+		color: #d63706; 
+	}
+
+	.box {
+		/*border: solid;*/
+		height: 70ch;
+	}
+
+	.bg {
+		background-image: url(./img/bg.crdownload);
+		background-color: black;
+		overflow: hidden;
+		background-repeat: no-repeat;
+	}
+
+	.options {
+		display: flex;
+		color: white;
+		justify-content: right;
+		align-items: center;
+		width: 70%;
+	}
+
+	.options ul li {
+		list-style: none;
+		margin: 8px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+	.options ul li:hover {
+		color: #d63706;
+	}
+
+	.options ul {
+		display: flex;
+	}
+</style>
+<body>
+<div class="bg">
+	<nav>
+		<div class="name">AARAMBH<b>'23</b></div>
+		<div class="options">
+			<ul>
+				<li>Home</li>
+				<li>Sports</li>
+				<li>Schedule</li>
+				<li>BTU</li>
+				<li>Sponsors</li>
+				<li>FAQ</li>
+				<li>About</li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div id="particles-js" class="box">
+		</div>
+	</main>
+</div>
+<script type="text/javascript" src="particles.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
