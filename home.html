@@ -30,6 +30,7 @@
 
 	nav {
 		display: flex;
+		/*border: solid;*/
 	}
 
 	.name b {
@@ -70,11 +71,56 @@
 	.options ul {
 		display: flex;
 	}
+
+
+	@media screen and (max-width:600px) {
+		.options {
+			display: none;
+		}
+
+		.bg {
+			background-position-x:20%;
+			background-size: cover; 
+		}
+		
+
+	}
+
+	.holder div {
+		height: 3px;
+		width: 30px;
+		background-color: black;
+		margin: 4px;
+		margin-top: 0px;
+		/*background-color: #d63706;*/
+		background-color: white;
+		cursor: pointer;	
+	}
+
+	.navbtn {
+			
+		display: flex;
+		color: white;
+		justify-content: right;
+		align-items: center;
+		width: 70%;
+		/*background-color: white;*/
+		padding: 7px;
+		padding-bottom: 9px;
+		padding-right: 10px;
+	}
+
+	@media(max-width: 1920px) and (min-width: 601px) {
+		.navbtn {
+			display: none;
+		}
+	}
+	
 </style>
 <body>
 <div class="bg">
 	<nav>
-		<div class="name">AARAMBH<b>'23</b></div>
+		<div class="name phone">AARAMBH<b>'23</b></div>
 		<div class="options">
 			<ul>
 				<li>Home</li>
@@ -85,6 +131,13 @@
 				<li>FAQ</li>
 				<li>About</li>
 			</ul>
+		</div>
+		<div class="navbtn">
+		<div class="holder">	
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 		</div>
 	</nav>
 	<main>
